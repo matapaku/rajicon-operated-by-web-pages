@@ -1,20 +1,9 @@
-<div id="top"></div>
+# webで動くラジコンカー
+・使用技術
+マイコン：raspberry pi 4
+制御：python
+フロントエンド：html,css,javascript
+バックエンド：flask python
 
-## 使用技術一覧
-
-<!-- シールド一覧 -->
-<!-- 該当するプロジェクトの中から任意のものを選ぶ-->
-<p style="display: inline">
-  <!-- フロントエンドのフレームワーク一覧 -->
-  html,css,javascript
-  <!-- バックエンドのフレームワーク一覧 -->
-  flask
-  <!-- バックエンドの言語一覧 -->
-  python
-  <!-- ミドルウェア一覧 -->
-  
-  <!-- インフラ一覧 -->
-  ngrok
-</p>
-
-<p align="right">(<a href="#top">トップへ</a>)</p>
+・使い方
+　ラズパイからwebページを開き、そのサイトから操作できます

@@ -1,4 +1,4 @@
-# webで動くラジコンカー
+# :racing_car:webで動くラジコンカー
 ## 使用技術
 マイコン：raspberry pi 4</br>
 制御：python</br>

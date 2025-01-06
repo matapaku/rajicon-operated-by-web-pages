@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servo, LED, and Motor Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+
+    </header>
+    <h1 id="title">ラジコンを動かそう！</h1>
+
+
+    <div id="main">
+        <div id="introduction">
+            <h3 id="how-to-play">遊び方</h3>
+            <div id="explain">
+                <div class="int-box">
+                    <h4 class="int-button">モーターボタン</h4>
+                    <p class="int-int">・前・ストップ・後ろのボタンを押すとモーターが動き始めます</p>
+                </div>
+                <div class="int-box">
+                    <h4 class="int-button">方向転換スライダー</h4>
+                    <p class="int-int">進む方向を変えます</p>
+                </div>
+                <div class="int-box">
+                    <h4 class="int-button">LEDボタン</h4>
+                    <p class="int-int">押すと,ON/OFFが切り替わります</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="control-box">
+            <div id="status">
+                <p class="status-child">モーター: <span id="motor-status">Stopped</span></p>
+                <!-- <p class="status-child">Current Value: <span id="current-value">0</span></p> -->
+                <p class="status-child">方向: <span id="sliderValue">0.00</span></p>
+                <p class="status-child">LED: <span id="led-status">Off</span></p>
+            </div>
+
+            <div id="button-name-box">
+                <div class="button-name">あ</div>
+                <div class="button-name">あ</div>
+                <div class="button-name">あ</div>
+            </div>
+
+
+            <div id="control-center">
+                <div class="control-center-child" id="motor-control">
+                    <button class="control-button" id="motor-foward-box">⬆ 前</button>
+                    <button class="control-button" id="stopButton">ストップ</button>
+                    <button class="control-button" id="motor-backward-box">⬇ 後ろ</button>
+                </div>
+
+                <div id="servo-control">
+                        <p class="servo-child">方向転換</p>
+                        <!-- <input class="servo-child control-button" class="servo-slider" type="range" id="slider"  min="0" max="100" value="50" oninput="delayServo(this.value)"> -->
+                        <input class="servo-child control-button" type="range" id="slider" min="-1" max="1" step="0.01" value="0">
+                        <small>横にスライド</small>
+                </div>
+
+                <div id="led-control">
+                        <p class="led-child">LED</p>
+                        <button class="led-child control-button" id="ledButton">ON/OFF</button>
+                        <small>ON・OFF切り替え</small>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div id="lineup">
+            <h2 id="others">展示紹介</h2>
+            <ul id="list-lineup">
+                <li class="tooltip">チュロス<span class="description_top"></span></li>
+                <li class="tooltip">焼きそば<span class="description_top">説明aaaaaaaaaaaa</span></li>
+                <li class="tooltip">カワロボ<span class="description_top">説明<br>場所：体育館</span></li>
+                <li class="tooltip">二足歩行ロボット<span class="description_top">説明<br>場所：体育館</span></li>
+                <li class="tooltip">ドローン<span class="description_top">説明<br>場所：体育館</span></li>
+                <li class="tooltip">タワー<span class="description_top">説明<br>場所：体育館</span></li>
+                <li class="tooltip">ロボットアーム<span class="description_top">説明<br>場所：体育館</span></li>
+                <li class="tooltip">⚪︎×ゲーム<span class="description_top">説明<br>場所：体育館</span></li>
+                <li class="tooltip">看板<span class="description_top">ゲーミングカラーでカッコいい<br>場所：体育館</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

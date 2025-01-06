@@ -9,3 +9,11 @@
 　ラズパイからwebページを開き、そのサイトから操作できます</br>
  [使い方資料.pptx…]()
 
+
+
+ 
+
+
+
+https://github.com/user-attachments/assets/ceee24c0-8dda-40db-ac61-2fa1342737c7
+

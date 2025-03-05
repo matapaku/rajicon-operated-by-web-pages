@@ -4,6 +4,7 @@
 制御：python</br>
 フロントエンド：html,css,javascript</br>
 バックエンド：flask python</br>
+リバース・プロキシツール：ngrok
 
 ## 使い方
 　ラズパイからwebページを開き、そのサイトから操作できます</br>
